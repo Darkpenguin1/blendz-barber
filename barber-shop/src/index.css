@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-
+h1, h2, .font-header {
+  font-family: 'Bebas Neue', 'Montserrat', Arial, sans-serif;
+  letter-spacing: 1px;
+}
 
 @keyframes slideDown {
   from {

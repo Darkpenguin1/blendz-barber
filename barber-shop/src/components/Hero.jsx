@@ -44,6 +44,16 @@ function Hero() {
         ))}
       </div>
       
+      <div className="flex flex-col items-center mt-4">
+        <span className="text-[#caf0f8] mb-2 text-2xl">Want to see more?</span>
+        <a
+          href="/gallery"
+          className="bg-[#ffd60a] text-[#03045e] text-2xl font-bold px-6 py-2 rounded-lg shadow hover:bg-[#ffe066] transition"
+        >
+          View Full Gallery
+        </a>
+      </div>
+      
     </div>
   );
 }
