@@ -1,0 +1,72 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
+  margin-top: 0;
+  padding-top: 22px;
+  padding-bottom: 40px; /* Add or increase this value */
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column by default (mobile) */
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+@media (min-width: 640px) { /* Adjust 640px to your preferred breakpoint */
+  .services-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns on tablet and up */
+  }
+}
+
+.services-card {
+  background-color: #03045e;
+  color: #caf0f8;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35); /* Darker, closer to black */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+}
+
+.services-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.services-card img {
+  width: 100%;
+  height: 360px;      /* Increase this value for more height */
+  object-fit: cover;
+}
+
+.services-card-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.services-card-title {
+  color: #ffd60a;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.services-card-price {
+  color: #ffd60a;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.services-card-desc {
+  color: #caf0f8;
+  font-size: 1rem;
+}
